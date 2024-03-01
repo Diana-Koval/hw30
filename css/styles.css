@@ -1,0 +1,86 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  animation-name: bg-colors;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+section {
+  position: relative;
+  margin: 50px;
+}
+.block {
+  display: block;
+  height: 100px;
+  width: 100px;
+  animation: block-animation 4s linear infinite;
+  position: absolute;
+}
+
+@keyframes block-animation {
+  0% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: blue;
+    top: 300px;
+    left: 0;
+  }
+  50% {
+    background-color: green;
+    top: 300px;
+    left: 300px;
+  }
+  75% {
+    background-color: yellow;
+    top: 0;
+    left: 300px;
+  }
+  100% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+}
